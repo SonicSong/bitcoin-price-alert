@@ -9,7 +9,7 @@ def main():
         content = urllib.request.urlopen('https://rate.sx/1BTC')
         read_content = content.read().decode('UTF-8')
         print('USD ' + read_content)
-        if read_content <= '46164':
+        if read_content <= '45000':         #Change value to inform when price is low
             print('LOW PRICE ALERT!')
             if read_content != btc_last:
                 print('PRICE CHANGE!')
