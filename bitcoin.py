@@ -13,7 +13,7 @@ def main():
             print('LOW PRICE ALERT!')
             if read_content != btc_last:
                 print('PRICE CHANGE!')
-                #playsound('SCREAM.mp3')    #mp3 file should be in the same location as bitcoin.py
+                #playsound('')    #mp3 file should be in the same location as bitcoin.py
             btc_last = read_content
         if sleep_max > 150:
             break
